@@ -1,7 +1,12 @@
-const CACHE_NAME = 'hostel-manager-v1';
+const CACHE_NAME = 'hostel-manager-v2';
 const urlsToCache = [
     '/',
     '/index.html',
+    '/styles.css',
+    '/app.js',
+    '/manifest.json',
+    '/icon-192.png',
+    '/icon-512.png',
     'https://unpkg.com/docx@7.1.0/build/index.js',
     'https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js'
 ];
@@ -44,4 +49,3 @@ self.addEventListener('activate', event => {
     );
     self.clients.claim();
 });
-
